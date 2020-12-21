@@ -124,6 +124,9 @@ img{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--link-color);
+    align-items: center;
+    display: inline;
 }
 
 .list{
@@ -154,19 +157,21 @@ img{
     fill:var(--link-color);
 }
 
+
 .email-header:hover .header-mail-icon,
 .email-header:focus .header-mail-icon,
 .phone-header:hover .header-tel-icon,
 .phone-header:focus .header-tel-icon{
     color:var(--color-accent);
-    fill:var(--color-accent);
+    fill:currentColor;
 }
 /*==========End Header=========*/
 /*===========Booking =====*/
 
 .booking-section{   
     background-color: var(--main-background);
-    background-image:  url(../images-2/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47,48,58,0.4),
+    rgba(47,48,58,0.4)), url(../images-2/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -261,21 +266,20 @@ img{
 }
 
 .icon-antenna::before{
-    background-image:url(../various_icons/logo1.svg);
+    background-image:url(../various_icons/antenna.svg);
 }
 
 .icon-clock::before{
-    background-image:url(../various_icons/logo2.svg);
+    background-image:url(../various_icons/clock.svg);
 }
 
 .icon-diagram::before{
-    background-image:url(../various_icons/logo3.svg);
+    background-image:url(../various_icons/diagram.svg);
 }
 
 .icon-astronaut::before{
-    background-image:url(../various_icons/logo4.svg);
+    background-image:url(../various_icons/astronaut.svg);
 }
-
 
 .undertitle{
     font-family: var(--main-font);
@@ -392,6 +396,99 @@ height: 368px;
     height: 108px;
 }
 
+.social-list{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-accent-2);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+    fill:var(--color-accent-2);
+}
+
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color:var(--color-accent)
+}
+
+.social-list-icon{
+    width: 20px;
+    height: 20px;
+    fill:var(--icon-color);
+}
+/*=========Client's section=======*/
+
+.client-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-list-link:hover,
+.client-list-link:focus{
+    border-color: var(--color-accent);
+}
+
+.client-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--icon-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: var(--color-accent-2);
+}
+
+.client-list-link:hover .client-list-icon,
+.client-list-link:focus .client-list-icon{
+    fill:var(--color-accent);
+}
+
+.client-list-icon{
+    fill:var(--icon-color);
+}
+
+.logo1{
+    width: 45px;
+    height: 50px;
+}
+
+.logo2{
+    width: 40px;
+    height: 52px;
+}
+
+.logo3{
+    width: 41px;
+    height: 42px;
+}
+
+.logo4{
+    width: 80px;
+    height: 42px;
+}
+
+.logo5{
+    width: 60px;
+    height: 47px;
+}
+
+.logo6{
+    width: 88px;
+    height: 45px;
+}
+
 
 /* end of the OUR TEAM*/
 /* Footer*/
@@ -400,6 +497,11 @@ height: 368px;
     background:var(--main-background);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-container{
+    display: flex;
+    align-items: baseline;
 }
 
 .contacts-footer-item{
@@ -437,6 +539,45 @@ height: 368px;
 
 .link{
     font-style:normal;
+}
+
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.footer-undertitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-accent-2);
+    margin-bottom: 20px;
+}
+
+.footer-social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:rgba(255,255,255,0.1);
+    margin-right: 10px;
+}
+
+.footer-social-list-icon{
+    width: 20px;
+    height: 20px;
+    fill:var(--color-accent-2);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus{
+    background-color:var(--color-accent)
 }
 /* End of Studio-design */
 
