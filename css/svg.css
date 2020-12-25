@@ -7,8 +7,6 @@
     --color-accent-2: #FFFFFF;
     --main-background:#2F303A;
     --super-black-color:#000;
-    --link-color:#757575;
-    --icon-color:#afb1b8;
 }
 
 .body{
@@ -124,9 +122,6 @@ img{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--link-color);
-    align-items: center;
-    display: inline;
 }
 
 .list{
@@ -137,44 +132,19 @@ img{
 .contacts-header-item .link:hover,
 .contacts-header-item .link:focus{
     color: #2196F3;
-    fill: var(--color-accent);
  }
 
  .current{
      color: #2196F3;
  }
 
-.header-mail-icon{
-    margin-right:10px;
-    width:16px;
-    height:12px;
-    fill:var(--link-color);
-}
-
-.header-tel-icon{
-    margin-right: 10px;
-    width:10px;
-    height:16px;
-    fill:var(--link-color);
-}
 
 
-.email-header:hover .header-mail-icon,
-.email-header:focus .header-mail-icon,
-.phone-header:hover .header-tel-icon,
-.phone-header:focus .header-tel-icon{
-    color:var(--color-accent);
-    fill:var(--color-accent);
-}
 /*==========End Header=========*/
 /*===========Booking =====*/
 
 .booking-section{   
-    background-color: var(--main-background);
-    background-image: linear-gradient(to right, rgba(47,48,58,0.4),
-    rgba(47,48,58,0.4)), url(../images-2/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: var(--main-background);
 }
 
 .booking-section-part{
@@ -252,47 +222,9 @@ img{
     display: flex;
 }
 
-.characteristics-section-list::before{
-    content:'';
-    display:block;
-    height: 120px;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-color:#f5f4fa;
-}
-
-
 .service-charactestics:not(:last-child){
     margin-right: 30px;
 }
-
-
-
-.service-characteristics::before{
-    content:'';
-    display:block;
-    height: 120px;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-color:#f5f4fa;
-}
-
-.icon-antenna::before{
-    background-image:url(../icons/antenna.svg);
-}
-
-.icon-clock::before{
-    background-image:url(../icons/clock.svg);
-}
-
-.icon-diagram::before{
-    background-image:url(../icons/diagram.svg);
-}
-
-.icon-astronaut::before{
-    background-image:url(../icons/astronaut.svg);
-}
-
 .undertitle{
     font-family: var(--main-font);
     font-style:normal;
@@ -304,7 +236,6 @@ img{
     letter-spacing: 0.03em;
     margin-bottom:50px;
 }
-
 
 .character-name{
     font-family: var(--main-font);
@@ -386,7 +317,7 @@ img{
     font-size: 16px;
     line-height: 1.1876;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 }
 
 .team-list{
@@ -399,74 +330,13 @@ img{
 }
 
 
+
 .about-each-member{
     padding: 30px 10px;
     background: #FFFFFF;
+    height: 108px;
 }
 
-.social-list{
-    display:flex;
-    justify-content: space-evenly;
-}
-
-.social-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--color-accent-2);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon{
-    fill:var(--color-accent-2);
-}
-
-.social-list-link:hover,
-.social-list-link:focus{
-    background-color:var(--color-accent)
-}
-
-.social-list-icon{
-    width: 20px;
-    height: 20px;
-    fill:var(--icon-color);
-}
-/*=========Client's section=======*/
-
-.client-list{
-    display: flex;
-    justify-content: space-between;
-}
-
-.client-list-link:hover,
-.client-list-link:focus{
-    border-color: var(--color-accent);
-}
-
-.client-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 90px;
-    border: 1px solid var(--icon-color);
-    box-sizing: border-box;
-    border-radius: 4px;
-    background-color: var(--color-accent-2);
-}
-
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon{
-    fill:var(--color-accent);
-}
-
-.client-list-link:hover,
-.client-list-link:focus{
-    fill:var(--accent-color);
-}
 
 /* end of the OUR TEAM*/
 /* Footer*/
@@ -475,11 +345,6 @@ img{
     background:var(--main-background);
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.footer-container{
-    display: flex;
-    align-items: baseline;
 }
 
 .contacts-footer-item{
@@ -508,6 +373,7 @@ img{
     margin-top: 20px;
 }
 
+
 .contacts-footer-item:not(:last-child){
     margin-bottom: 9px;
 }
@@ -516,46 +382,6 @@ img{
 
 .link{
     font-style:normal;
-}
-
-
-.footer-list{
-    display: flex;
-    flex-direction: column;
-    margin-right: 70px;
-}
-
-.footer-undertitle{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-accent-2);
-    margin-bottom: 20px;
-}
-
-.footer-social-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color:rgba(255,255,255,0.1);
-    margin-right: 10px;
-}
-
-.footer-social-list-icon{
-    width: 20px;
-    height: 20px;
-    fill:var(--color-accent-2);
-}
-
-.footer-social-list-link:hover,
-.footer-social-list-link:focus{
-    background-color:var(--color-accent);
-    fill: var(--color-accent-2);
 }
 /* End of Studio-design */
 
@@ -590,8 +416,8 @@ img{
     justify-content: space-between;
     padding: 0px;
     margin-bottom: -30px;
-
 }
+
 
 
 .project-info-list{
