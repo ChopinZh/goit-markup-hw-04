@@ -129,6 +129,7 @@ img{
     display: flex;
 }
 
+
 .list{
     list-style-type: none;
 }
@@ -139,8 +140,10 @@ img{
  }
 
  .contacts-header-item:hover .header-tel-icon,
- .contacts-header-item:focus .header-tel-icon{
-     fill:currentColor;
+ .contacts-header-item:focus .header-tel-icon,
+ .contacts-header-item:hover .header-mail-icon,
+ .contacts-header-item:focus .header-mail-icon{
+   fill:currentColor;
  }
 
  .current{
@@ -155,22 +158,23 @@ img{
     margin-right: 10px;
 }
 
-.phone-header:hover .header-tel-icon,
-.phone-header:focus .header-tel-icon{
-    fill: var(--color-accent);
-}
-
 
 /*==========End Header=========*/
 /*===========Booking =====*/
 
-.booking-section{   
+.booking-section{  
     background-color: var(--main-background);
     background-image: linear-gradient(to right, rgba(47,48,58,0.4),
     rgba(47,48,58,0.4)), url(../images-2/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    max-width: 1600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
 .booking-section-part{
     padding-top: 200px;
@@ -308,6 +312,7 @@ img{
     color:var(--main-color);
     letter-spacing: 0.03em;
     margin-bottom:10px;
+    margin-top: 30px;
 }
 .service-item-description{
     font-family: var(--main-font);
@@ -410,10 +415,12 @@ img{
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-accent-2);
+    color: var(--icon-color);
+    fill: var(--icon-color);
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon{
+.social-list-link:hover,
+.social-list-link:focus{
     fill:var(--color-accent-2);
 }
 
@@ -450,18 +457,17 @@ img{
     border-radius: 4px;
     background-color: var(--color-accent-2);
     align-content: stretch;
+    color: var(--icon-color);
 }
-
 
 .client-list-icon{
     display: block;
-    
+    fill: currentColor;
 }
-
 
 .client-list-link:hover .client-list-icon,
 .client-list-link:focus .client-list-icon{
-    fill:var(--color-accent);
+    color:var(--color-accent);
 }
 
 .client-list-link:hover,
@@ -469,7 +475,7 @@ img{
     fill:var(--accent-color);
 }
 
-.clients.container{
+.clients .container{
     display: block;
     line-height: normal;
 }
@@ -554,7 +560,7 @@ img{
 .footer-social-list-icon{
     width: 20px;
     height: 20px;
-    fill:var(--color-accent)
+    fill:var(--color-accent-2)
 }
 
 .footer-social-list-link:hover,
@@ -600,7 +606,6 @@ img{
 
 }
 
-
 .project-info-list{
     background:var(--color-accent-2);
     border:1px solid #eee;
@@ -613,18 +618,16 @@ img{
     justify-content: center;
 }
 
-
 .project-illustration{
     padding: 20px 24px;
 }
-    
+
 
 .button-name:hover{
     background-color:var(--color-accent);
     color:#FFFFFF;
 }
-
-  
+ 
 .project-name{
     font-family: var(--main-font);
     font-weight: 700;
@@ -632,6 +635,7 @@ img{
     line-height: 2;
     color:var(--main-color);
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .project-link{
@@ -650,5 +654,10 @@ img{
 .address-footer{
     color: #FFF;
 }
+
+.project-info-list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
 /* end of portfolio*/
